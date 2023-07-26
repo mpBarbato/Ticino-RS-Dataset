@@ -133,7 +133,7 @@ class Dataset(data.Dataset):
         #     else:
         #         gt_ag[gt_ag == i] = gt_ag[gt_ag == i] - val2remove
 
-        targets = gt_lu, gt_ag
+        # targets = gt_lu, gt_ag
 
         return inputs, targets, self.fns.iloc[idx]['fns']
 
