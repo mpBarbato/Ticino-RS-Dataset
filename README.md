@@ -50,3 +50,5 @@ It includes two pixel-level labelings:
 ## How to train a model?
 
 ## How to test a model?
+
+## Citation
