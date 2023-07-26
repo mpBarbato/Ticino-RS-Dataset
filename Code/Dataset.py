@@ -112,26 +112,26 @@ class Dataset(data.Dataset):
         targets = imgs[num_modalities:]
 
         # remove park (temporary)
-        gt_lu = imgs[-2]
-        gt_lu[gt_lu == 4] = 3
-        gt_lu[gt_lu > 4] = gt_lu[gt_lu > 4] - 1
+        # gt_lu = imgs[-2]
+        # gt_lu[gt_lu == 4] = 3
+        # gt_lu[gt_lu > 4] = gt_lu[gt_lu > 4] - 1
         
         # remove classes from agriculture
-        gt_ag = imgs[-1]
-        list2remove = [2,3,4,5,7,12,13,14,16,18]
-        val2remove = 0
-        for i in range(20):
-            if i in list2remove:
-                if i == 3:
-                    gt_ag[gt_ag == i] = 19 # forest in natural vegetation
-                if i == 16:
-                    gt_ag[gt_ag == i] = 17 # natural barren in water
-                else:
-                    gt_ag[gt_ag == i] = 0
+        # gt_ag = imgs[-1]
+        # list2remove = [2,3,4,5,7,12,13,14,16,18]
+        # val2remove = 0
+        # for i in range(20):
+        #     if i in list2remove:
+        #         if i == 3:
+        #             gt_ag[gt_ag == i] = 19 # forest in natural vegetation
+        #         if i == 16:
+        #             gt_ag[gt_ag == i] = 17 # natural barren in water
+        #         else:
+        #             gt_ag[gt_ag == i] = 0
 
-                val2remove += 1
-            else:
-                gt_ag[gt_ag == i] = gt_ag[gt_ag == i] - val2remove
+        #         val2remove += 1
+        #     else:
+        #         gt_ag[gt_ag == i] = gt_ag[gt_ag == i] - val2remove
 
         targets = gt_lu, gt_ag
 
