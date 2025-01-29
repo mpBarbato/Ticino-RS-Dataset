@@ -50,8 +50,18 @@ It includes two pixel-level labelings:
 ## How to download
 To download the entire dataset, [go to this webpage and follow the instructions.](https://mpbarbato.github.io/Ticino-dataset/).
 
-## How to train a model?
-
-## How to test a model?
-
 ## Citation
+if you use this dataset, please cite us :)
+
+```latex
+@article{barbato2024ticino,
+  title={Ticino: A multi-modal remote sensing dataset for semantic segmentation},
+  author={Barbato, Mirko Paolo and Piccoli, Flavio and Napoletano, Paolo},
+  journal={Expert Systems with Applications},
+  volume={249},
+  pages={123600},
+  year={2024},
+  publisher={Elsevier}
+}
+```
+
