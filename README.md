@@ -47,6 +47,9 @@ It includes two pixel-level labelings:
     - 8 Water bodies
     - 9 Natural vegetation
 
+## How to download
+To download the entire dataset, [go to this webpage and follow the instructions.](https://mpbarbato.github.io/Ticino-dataset/).
+
 ## How to train a model?
 
 ## How to test a model?
